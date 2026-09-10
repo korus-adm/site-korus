@@ -1,0 +1,95 @@
+@import 'tailwindcss';
+
+@font-face {
+  font-family: 'Transcend';
+  src: url('./assets/fonts/Transcend-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Transcend';
+  src: url('./assets/fonts/Transcend-Semibold.otf') format('opentype');
+  font-weight: 600;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Transcend';
+  src: url('./assets/fonts/Transcend-Black.otf') format('opentype');
+  font-weight: 800;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Transcend';
+  src: url('./assets/fonts/Transcend-Bold.otf') format('opentype');
+  font-weight: 900;
+  font-display: swap;
+}
+
+@theme {
+  --color-paper: #f0ede8;
+  --color-brown: #6a5041;
+  --color-orange: #b86c3d;
+  --color-orange-deep: #96502a;
+  --color-ink: #18120e;
+  --color-ink-light: #241c16;
+  --font-display: 'Transcend', serif;
+  --font-sans: 'Montserrat', system-ui, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--color-paper);
+  color: var(--color-brown);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+.k-frame {
+  filter: drop-shadow(
+    calc(10px * (1 - var(--korus-p, 0)) + 4px * var(--korus-p, 0))
+    calc(16px * (1 - var(--korus-p, 0)) + 10px * var(--korus-p, 0))
+    calc(22px - 8px * var(--korus-p, 0)) rgba(43, 33, 26, 0.28)
+  );
+}
+
+@keyframes k-float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(14px);
+  }
+}
+
+@keyframes arrow-bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+    opacity: 0.55;
+  }
+  50% {
+    transform: translateY(8px);
+    opacity: 1;
+  }
+}
