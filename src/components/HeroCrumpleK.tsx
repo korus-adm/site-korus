@@ -153,7 +153,7 @@ export function HeroCrumpleK({ sectionRef }: { sectionRef: React.RefObject<HTMLE
         role="img"
         aria-label="Logo Korus"
         tabIndex={0}
-        className="relative block h-[clamp(180px,34vw,340px)] w-[clamp(180px,34vw,340px)] cursor-pointer touch-manipulation outline-none [-webkit-tap-highlight-color:transparent] focus-visible:rounded-xl focus-visible:shadow-[0_0_0_3px_rgba(184,108,61,0.55)]"
+        className="relative block h-[clamp(240px,46vw,460px)] w-[clamp(240px,46vw,460px)] cursor-pointer touch-manipulation outline-none [-webkit-tap-highlight-color:transparent] focus-visible:rounded-xl focus-visible:shadow-[0_0_0_3px_rgba(184,108,61,0.55)]"
         onPointerEnter={() => goTo(1)}
         onPointerLeave={() => {
           pointerActiveRef.current = false
