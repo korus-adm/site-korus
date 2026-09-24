@@ -1,0 +1,7 @@
+{
+  "rewrites": [
+    { "source": "/teachermarina", "destination": "https://teachermarina.vercel.app/teachermarina" },
+    { "source": "/teachermarina/:path*", "destination": "https://teachermarina.vercel.app/teachermarina/:path*" },
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}
