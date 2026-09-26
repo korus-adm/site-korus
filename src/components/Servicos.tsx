@@ -9,6 +9,7 @@ import dash5 from '../assets/img/dash-5.jpg'
 import dashAnuncios from '../assets/img/dash-anuncios.png'
 import site1 from '../assets/img/site-1.jpg'
 import siteIpac from '../assets/img/site-ipac.png'
+import siteTeacherMarina from '../assets/img/site-teacher-marina.png'
 import { Lightbox } from './Lightbox'
 
 type Servico = {
@@ -38,7 +39,7 @@ const servicos: Servico[] = [
     titulo: 'Sites',
     descricao:
       'Presença digital com identidade própria: rápida, responsiva e pensada para converter.',
-    galeria: [site1, siteIpac],
+    galeria: [site1, siteIpac, siteTeacherMarina],
   },
 ]
 
