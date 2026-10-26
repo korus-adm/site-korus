@@ -2,6 +2,8 @@
   "rewrites": [
     { "source": "/teachermarina", "destination": "https://teachermarina.vercel.app/teachermarina" },
     { "source": "/teachermarina/:path*", "destination": "https://teachermarina.vercel.app/teachermarina/:path*" },
+    { "source": "/dolceromana", "destination": "https://dolceromana.vercel.app/dolceromana" },
+    { "source": "/dolceromana/:path*", "destination": "https://dolceromana.vercel.app/dolceromana/:path*" },
     { "source": "/(.*)", "destination": "/index.html" }
   ]
 }
